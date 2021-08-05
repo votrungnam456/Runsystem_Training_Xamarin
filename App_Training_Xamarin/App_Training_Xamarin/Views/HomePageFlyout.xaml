@@ -21,11 +21,13 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="10"/>
           </Grid.RowDefinitions>
-          <Label
+                    <Image Source="user">
+                    </Image>
+                    <Label
               Grid.Column="1"
               Grid.Row="2"
-              Text="This App"
-              Style="{DynamicResource SubtitleStyle}"/>
+              Text="Menu"
+              />
         </Grid>
       </ListView.Header>
       <ListView.ItemTemplate>

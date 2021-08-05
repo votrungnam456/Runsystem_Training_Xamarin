@@ -133,4 +133,10 @@
       <Name>App_Training_Xamarin</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hotel_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\user.png" />
+  </ItemGroup>
 </Project>

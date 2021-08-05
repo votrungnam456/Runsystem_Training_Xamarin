@@ -33,11 +33,11 @@ namespace App_Training_Xamarin.Views
             {
                 MenuItems = new ObservableCollection<HomePageFlyoutMenuItem>(new[]
                 {
-                    new HomePageFlyoutMenuItem { Id = 0, Title = "Page 1" },
-                    new HomePageFlyoutMenuItem { Id = 1, Title = "Page 2" },
-                    new HomePageFlyoutMenuItem { Id = 2, Title = "Page 3" },
-                    new HomePageFlyoutMenuItem { Id = 3, Title = "Page 4" },
-                    new HomePageFlyoutMenuItem { Id = 4, Title = "Page 5" },
+                    new HomePageFlyoutMenuItem { Id = 0, Title = "Home" , TargetType=typeof(WelcomePage)},
+                    new HomePageFlyoutMenuItem { Id = 1, Title = "Introduce",TargetType=typeof(InfomationPage) },
+                    new HomePageFlyoutMenuItem { Id = 2, Title = "About PG",TargetType=typeof(WelcomePage) },
+                    new HomePageFlyoutMenuItem { Id = 3, Title = "List room",TargetType=typeof(ListRoomPage)},
+                    new HomePageFlyoutMenuItem { Id = 4, Title = "Exit",TargetType=typeof(LoginPage) },
                 });
             }
 

@@ -574,3 +574,5 @@ C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Trainin
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin.Android\obj\Debug\110\res\drawable\hotel_image.jpg
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin.Android\obj\Debug\110\res\drawable\user.png

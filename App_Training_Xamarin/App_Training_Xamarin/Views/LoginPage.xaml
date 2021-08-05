@@ -8,11 +8,16 @@
         <local:LoginPageViewModels/>
     </ContentPage.BindingContext>
     <RelativeLayout>
+        <Label Text="Welcome to Cross Hotel"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.05}"
+               FontSize="30"
+               />
         <Label Text="Login"
                x:Name="LoginTitle"
                  RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.4}"
                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"
-               FontSize="30"
+               FontSize="25"
                />
         <Label Text="Username"
                  RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
@@ -20,6 +25,7 @@
                FontSize="20"
                />
         <Entry x:Name="IdEntry"
+               Text="Nam"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.3}"
                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}"
                  WidthRequest="240"
@@ -30,6 +36,7 @@
                FontSize="20"
                />
         <Entry x:Name="PasswordEntry"
+               Text="123"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.3}"
                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.4}"
                  WidthRequest="240"

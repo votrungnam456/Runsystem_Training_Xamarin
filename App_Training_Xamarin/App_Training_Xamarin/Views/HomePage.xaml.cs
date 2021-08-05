@@ -17,7 +17,6 @@ namespace App_Training_Xamarin.Views
             InitializeComponent();
             FlyoutPage.ListView.ItemSelected += ListView_ItemSelected;
         }
-
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as HomePageFlyoutMenuItem;
