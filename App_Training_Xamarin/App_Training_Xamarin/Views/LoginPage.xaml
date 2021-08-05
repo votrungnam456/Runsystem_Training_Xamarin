@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.LoginPage"
+             xmlns:local="clr-namespace:App_Training_Xamarin.ViewModels">
+
+    <ContentPage.BindingContext>
+        <local:LoginPageViewModels/>
+    </ContentPage.BindingContext>
+    <RelativeLayout>
+        <Label Text="Login"
+               x:Name="LoginTitle"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.4}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"
+               FontSize="30"
+               />
+        <Label Text="Username"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"
+               FontSize="20"
+               />
+        <Entry x:Name="IdEntry"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.3}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}"
+                 WidthRequest="240"
+            />
+        <Label Text="Password"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.43}"
+               FontSize="20"
+               />
+        <Entry x:Name="PasswordEntry"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.3}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.4}"
+                 WidthRequest="240"
+               IsPassword="True"
+            />
+        <Button Text="Đăng nhập"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.2}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5}"
+                WidthRequest="120"
+                Clicked="Login_Clicked"/>
+
+        <Button Text="Đăng ký"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5}"
+                WidthRequest="120"
+                />
+
+    </RelativeLayout>
+</ContentPage>
