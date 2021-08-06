@@ -10,24 +10,25 @@
               ItemsSource="{Binding MenuItems}">
       <ListView.Header>
         <Grid BackgroundColor="#03A9F4">
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="10"/>
-          </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
           <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="10"/>
-          </Grid.RowDefinitions>
-                    <Image Source="user">
-                    </Image>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Image 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Source="user"
+                        HeightRequest="50"
+                          />
                     <Label
-              Grid.Column="1"
-              Grid.Row="2"
-              Text="Menu"
-              />
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        VerticalOptions="Center"
+                        Text="Menu"
+                        FontSize="30"  
+                    />
         </Grid>
       </ListView.Header>
       <ListView.ItemTemplate>

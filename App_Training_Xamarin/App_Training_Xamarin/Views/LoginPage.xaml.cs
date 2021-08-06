@@ -12,14 +12,20 @@ namespace App_Training_Xamarin.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        LoginPageViewModels loginViewModels = new LoginPageViewModels();
+        LoginPageViewModels loginViewModels;
         
         public LoginPage()
         {
+            loginViewModels = new LoginPageViewModels();
             InitializeComponent();
             
         }
+        public LoginPage(LoginPageViewModels loginPageViewModels)
+        {
+            loginViewModels = loginPageViewModels;
+            InitializeComponent();
 
+        }
         private async void Login_Clicked(object sender, EventArgs e)
         {
             string username = IdEntry.Text;
@@ -29,6 +35,11 @@ namespace App_Training_Xamarin.Views
                 Preferences.Set("username", username);
                 await Navigation.PushModalAsync(new HomePage());
             }
+        }
+
+        private async void GoToRegister_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new RegisterPage(loginViewModels));
         }
     }
 }

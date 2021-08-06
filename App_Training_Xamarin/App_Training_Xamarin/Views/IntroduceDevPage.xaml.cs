@@ -10,11 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace App_Training_Xamarin.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RoomDetail : ContentPage
+    public partial class IntroduceDevPage : ContentPage
     {
-        public RoomDetail()
+        public IntroduceDevPage()
         {
             InitializeComponent();
+            devPage.Source = new UrlWebViewSource() { Url = "https://votrungnam456.github.io/"};
         }
+        
     }
 }

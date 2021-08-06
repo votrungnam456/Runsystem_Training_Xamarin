@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_Training_Xamarin.Views.ListRoomPage">
+             x:Class="App_Training_Xamarin.Views.ListRoomPage"
+             x:Name="main">
 
     <ContentPage.Content>
         <StackLayout>
             <ScrollView BackgroundColor="DarkGray"
                         x:Name="MyScrollView"
                         Orientation="Vertical">
-                <ListView ItemsSource="{Binding .}">
+                <ListView ItemsSource="{Binding Rooms}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -25,13 +26,13 @@
                                     <Label Grid.Row="0" HorizontalOptions="Center"  Grid.Column="0"  Text="{Binding IdRoom}"></Label>
                                     <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="1" Text="{Binding NameRoom}"></Label>
                                     <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="2" Text="{Binding Price}"></Label>
-                                    <Button  Grid.Row="0" HorizontalOptions="Center" Grid.Column="3" Text="Detail"  Clicked="Button_Clicked"></Button>
+                                    <Button  Grid.Row="0" HorizontalOptions="Center" Grid.Column="3" Text="Detail" Command="{Binding Source={x:Reference main}, Path = BindingContext.DetailCommand}" CommandParameter="{Binding .}"></Button>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </ScrollView>>
+            </ScrollView>
 
 
 

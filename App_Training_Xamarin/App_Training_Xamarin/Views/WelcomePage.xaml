@@ -8,7 +8,7 @@
         <StackLayout>
             <Label Text="Welcome to Cross Hotel"
                 HorizontalOptions="CenterAndExpand" />
-            <Image Source="hotel_image"></Image>
+            <Image x:Name="imgWelcome"></Image>
             <Label Text="Click here to get more infomation about us"
                    HorizontalOptions="CenterAndExpand" ></Label>
             <Button Text="Click here" Clicked="Info_Clicked"></Button>

@@ -35,9 +35,9 @@ namespace App_Training_Xamarin.Views
                 {
                     new HomePageFlyoutMenuItem { Id = 0, Title = "Home" , TargetType=typeof(WelcomePage)},
                     new HomePageFlyoutMenuItem { Id = 1, Title = "Introduce",TargetType=typeof(InfomationPage) },
-                    new HomePageFlyoutMenuItem { Id = 2, Title = "About PG",TargetType=typeof(WelcomePage) },
+                    new HomePageFlyoutMenuItem { Id = 2, Title = "About PG",TargetType=typeof(IntroduceDevPage) },
                     new HomePageFlyoutMenuItem { Id = 3, Title = "List room",TargetType=typeof(ListRoomPage)},
-                    new HomePageFlyoutMenuItem { Id = 4, Title = "Exit",TargetType=typeof(LoginPage) },
+                    new HomePageFlyoutMenuItem { Id = 4, Title = "Personal infomation",TargetType=typeof(LoginPage) },
                 });
             }
 

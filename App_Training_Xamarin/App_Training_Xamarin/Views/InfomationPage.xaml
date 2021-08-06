@@ -5,9 +5,10 @@
              Title="Infomation about cross hotel">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome are cross hotel"
+            <Label Text="Here is a infomation page"
                 VerticalOptions="CenterAndExpand" 
-                TextColor="Aqua"
+                   HorizontalOptions="CenterAndExpand"
+                TextColor="Yellow"
                   FontSize="30"/>
         </StackLayout>
     </ContentPage.Content>

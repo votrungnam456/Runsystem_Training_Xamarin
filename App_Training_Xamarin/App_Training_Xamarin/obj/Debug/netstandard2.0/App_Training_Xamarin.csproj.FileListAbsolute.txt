@@ -20,3 +20,6 @@ C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Trainin
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\InfomationPage.xaml.g.cs
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\ListRoomPage.xaml.g.cs
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\RoomDetail.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\IntroduceDevPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\PersonalInfomationPage.xaml.g.cs
