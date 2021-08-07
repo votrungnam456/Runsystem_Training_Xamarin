@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Training_Xamarin.Views.LoginPage"
-             xmlns:local="clr-namespace:App_Training_Xamarin.ViewModels">
+             xmlns:local="clr-namespace:App_Training_Xamarin.ViewModels"
+             x:Name="main">
     <ContentPage.Content>
         <RelativeLayout>
             <Label Text="Welcome to Cross Hotel"
@@ -22,7 +23,7 @@
                     FontSize="20"
                     />
             <Entry x:Name="IdEntry"
-                    Text="Nam"
+                    Text="{Binding Username}"
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.3}"
                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}"
                         WidthRequest="240"
@@ -33,7 +34,7 @@
                     FontSize="20"
                     />
             <Entry x:Name="PasswordEntry"
-                    Text="123"
+                    Text="{Binding Password}"
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.3}"
                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.4}"
                         WidthRequest="240"
@@ -43,7 +44,8 @@
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.2}"
                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5}"
                     WidthRequest="120"
-                    Clicked="Login_Clicked"/>
+                    Command="{Binding Source={x:Reference main}, Path = BindingContext.LoginCommand}"
+                    />
 
             <Button Text="Đăng ký"
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}"

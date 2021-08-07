@@ -5,8 +5,27 @@
     <ContentPage.Content>
         <StackLayout>
             <Label 
-                
+                Text="Name: "               
                 />
+            <Label
+                x:Name="nameLabel"
+                Text="{Binding Name}"
+                ></Label>
+            <Label 
+                Text="Birthday: "               
+                />
+            <Label
+                x:Name="birthdayLabel"
+                Text="{Binding Birthday}"
+                ></Label>
+            <Label 
+                Text="Gender: "               
+                />
+            <Label
+                x:Name="genderLabel"
+                Text="{Binding Gender}"
+                ></Label>
         </StackLayout>
     </ContentPage.Content>
+    
 </ContentPage>

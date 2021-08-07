@@ -16,25 +16,10 @@ namespace App_Training_Xamarin.Views
         
         public LoginPage()
         {
-            loginViewModels = new LoginPageViewModels();
+            loginViewModels = new LoginPageViewModels(Navigation);
             InitializeComponent();
+            BindingContext = loginViewModels;
             
-        }
-        public LoginPage(LoginPageViewModels loginPageViewModels)
-        {
-            loginViewModels = loginPageViewModels;
-            InitializeComponent();
-
-        }
-        private async void Login_Clicked(object sender, EventArgs e)
-        {
-            string username = IdEntry.Text;
-            string password = PasswordEntry.Text;
-            if (loginViewModels.checkLogin(username, password))
-            {
-                Preferences.Set("username", username);
-                await Navigation.PushModalAsync(new HomePage());
-            }
         }
 
         private async void GoToRegister_Clicked(object sender, EventArgs e)
