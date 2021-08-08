@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_Training_Xamarin.Views.RegisterPage">
+             x:Class="App_Training_Xamarin.Views.RegisterPage"
+             x:Name="mainRegister">
     <AbsoluteLayout>
         <Label
         Text="Register"
@@ -18,7 +19,8 @@
             FontSize="20"
             
             LineBreakMode="WordWrap" />
-        <Entry x:Name="NameEntry"               
+        <Entry x:Name="NameEntry" 
+               Text="{Binding NameRegister}"
                AbsoluteLayout.LayoutBounds="0.75,0.20,240,50"
                AbsoluteLayout.LayoutFlags="PositionProportional"              
                 />
@@ -29,7 +31,8 @@
             FontSize="20"
             
             LineBreakMode="WordWrap" />
-        <Entry x:Name="IdEntry"               
+        <Entry x:Name="IdEntry"     
+               Text="{Binding UsernameRegister}"
                AbsoluteLayout.LayoutBounds="0.8,0.29,210,50"
                AbsoluteLayout.LayoutFlags="PositionProportional"
                 />
@@ -39,7 +42,8 @@
             AbsoluteLayout.LayoutFlags="PositionProportional"
             FontSize="20"
             LineBreakMode="WordWrap" />
-        <Entry x:Name="PasswordEntry"               
+        <Entry x:Name="PasswordEntry"     
+               Text="{Binding PasswordRegister}"
                AbsoluteLayout.LayoutBounds="0.8,0.38,210,50"
                AbsoluteLayout.LayoutFlags="PositionProportional"
                IsPassword="True"
@@ -66,7 +70,8 @@
         <DatePicker MinimumDate="01/01/1990"
                     x:Name="BirthdayPicker"
                     AbsoluteLayout.LayoutBounds="0.8,0.58,210,50"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Date="{Binding BirthdayRegister}"/>
         <Label
         Text="Introduce"
             AbsoluteLayout.LayoutBounds="0.1,0.7,100,30"
@@ -76,11 +81,12 @@
             LineBreakMode="WordWrap" />
         <Editor x:Name="IntroduceEditor"
             AbsoluteLayout.LayoutBounds="0.8,0.8,210,120"
-            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+                Text="{Binding IntroduceRegister}"/>
         <Button Text="Register"
                 AbsoluteLayout.LayoutBounds="0.5,0.9,210,50"
             AbsoluteLayout.LayoutFlags="PositionProportional"
-                Clicked="Register_Clicked"/>
+                 Command="{Binding Source={x:Reference mainRegister}, Path = BindingContext.RegisterCommand}"/>
         <Button Text="Sign in"
                 AbsoluteLayout.LayoutBounds="0.5,1,210,50"
             AbsoluteLayout.LayoutFlags="PositionProportional"

@@ -4,7 +4,7 @@
              x:Class="App_Training_Xamarin.Views.InfomationPage"
              Title="Infomation about cross hotel">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="Black">
             <Label Text="Here is a infomation page"
                 VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
