@@ -18,18 +18,8 @@ namespace App_Training_Xamarin.Views
         {
             loginViewModels = new LoginPageViewModels(Navigation);
             InitializeComponent();
-            if (BindingContext == null)
-            {
-                BindingContext = loginViewModels;
-            }
+            BindingContext = loginViewModels;
             
-        }
-
-        private async void GoToRegister_Clicked(object sender, EventArgs e)
-        {
-            RegisterPage registerPage = new RegisterPage();
-            registerPage.BindingContext = loginViewModels;
-            await Navigation.PushModalAsync(registerPage);
         }
     }
 }

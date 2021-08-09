@@ -25,7 +25,10 @@ namespace App_Training_Xamarin.Views
 
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
-            page.BindingContext = this.BindingContext;
+            if(!item.Title.Equals("List room"))
+            {
+                page.BindingContext = this.BindingContext;
+            }         
             Detail = new NavigationPage(page);
             IsPresented = false;
 

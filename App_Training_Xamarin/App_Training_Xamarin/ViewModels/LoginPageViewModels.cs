@@ -20,29 +20,47 @@ namespace App_Training_Xamarin.ViewModels
         private string _usernameRegister, _passwordRegister, __introduceRegister, _nameRegister;
         private DateTime _birthdayRegister;
         private bool _genderRegister;
+        private Command _navigationRegister,_navigationLogin;
+        GetDataUsers dataUsers = new GetDataUsers();
         public LoginPageViewModels(INavigation navigation)
         {
             ListUser = dataUsers.listusers;
             Navigation = navigation;
-            //foreach(User user in dataUsers.listusers)
-            //{
-            //    ListUser.Add(user);
-            //}    
             LoginCommand = new Command(async () => await Login());
             RegisterCommand = new Command(async () => await Register());
+            NavigationLogin = new Command(async () => await navigationToLogin());
+            NavigationRegister = new Command(async () => await navigationToRegister());
+        }
+        public async Task navigationToLogin()
+        {
+            var loginPage = new LoginPage();
+            loginPage.BindingContext = this;
+            await Navigation.PushModalAsync(loginPage);
+        }
+        public async Task navigationToRegister()
+        {
+            NameRegister = "";
+            UsernameRegister = "";
+            PasswordRegister = "";
+            BirthdayRegister = new DateTime();
+            IntroduceRegister = "";
+            var registerPage = new RegisterPage();
+            registerPage.BindingContext = this;
+            await Navigation.PushModalAsync(registerPage);
         }
 
-        GetDataUsers dataUsers = new GetDataUsers();
         public async Task Login()
         {
             User userCheck = ListUser.FirstOrDefault(user => user.Username.Equals(Username));
-            if (userCheck.Password.Equals(Password))
+            if (userCheck != null)
             {
-                var homePage = new HomePage();
-                homePage.BindingContext = userCheck;
-                await Navigation.PushModalAsync(homePage);
+                if (userCheck.Password.Equals(Password))
+                {
+                    var homePage = new HomePage();
+                    homePage.BindingContext = userCheck;
+                    await Navigation.PushModalAsync(homePage);
+                }
             }
-
         }
 
         public async Task Register()
@@ -65,23 +83,7 @@ namespace App_Training_Xamarin.ViewModels
         public bool GenderRegister { get => _genderRegister; set => _genderRegister = value; }
         public string NameRegister { get => _nameRegister; set => _nameRegister = value; }
         public Command RegisterCommand { get => _registerCommand; set => _registerCommand = value; }
-
-        //GetDataUsers dataUsers = new GetDataUsers();
-        //public bool checkLogin(string username, string password)
-        //{
-        //    for(int i = 0; i < dataUsers.listusers.Count; i++)
-        //    {
-        //        if(username.Equals(dataUsers.listusers[i].Username) && password.Equals(dataUsers.listusers[i].Password))
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
-        //public bool addUserModel(string name, string username, string password, string birthDay, bool gender, string introduce)
-        //{
-        //    dataUsers.addUser(name, username, password, birthDay, gender, introduce);
-        //    return true;
-        //}
+        public Command NavigationRegister { get => _navigationRegister; set => _navigationRegister = value; }
+        public Command NavigationLogin { get => _navigationLogin; set => _navigationLogin = value; }
     }
 }

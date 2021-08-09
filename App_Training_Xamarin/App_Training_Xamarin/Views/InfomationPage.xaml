@@ -1,15 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="App_Training_Xamarin.Views.InfomationPage"
              Title="Infomation about cross hotel">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black">
             <Label Text="Here is a infomation page"
-                VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                 TextColor="Yellow"
                   FontSize="30"/>
+            <Label Text="Map"  TextColor="Yellow"/>
+            <Grid>
+                <map:Map>
+                    <map:Map.ItemTemplate>
+                        <DataTemplate>
+                            <map:Pin Position="{Binding Position}"
+                                     Address="{Binding Address}"
+                                     Label="{Binding PlaceName}"/>
+                        </DataTemplate>
+                    </map:Map.ItemTemplate>
+                </map:Map>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

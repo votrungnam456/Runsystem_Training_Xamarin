@@ -20,11 +20,6 @@ namespace App_Training_Xamarin.Views
             BirthdayPicker.Date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
         }
 
-        private async void GoToLogin_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new LoginPage());
-        }
-
         private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
             RadioButton radioButton = (RadioButton)sender;

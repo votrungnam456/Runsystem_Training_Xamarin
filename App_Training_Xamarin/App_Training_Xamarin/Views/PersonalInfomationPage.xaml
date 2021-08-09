@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_Training_Xamarin.Views.PersonalInfomationPage">
+             x:Class="App_Training_Xamarin.Views.PersonalInfomationPage"
+             xmlns:local="clr-namespace:App_Training_Xamarin.ViewModels"
+             x:Name="personalInfomationPage">
+    <ContentPage.Resources>
+        <local:ConvertDateTimeToString x:Key="convertDateTimeToString"/>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <Label 
@@ -16,14 +21,19 @@
                 />
             <Label
                 x:Name="birthdayLabel"
-                Text="{Binding Birthday}"
-                ></Label>
+                Text="{Binding Birthday}"/>
             <Label 
                 Text="Gender: "               
                 />
             <Label
                 x:Name="genderLabel"
                 Text="{Binding Gender}"
+                ></Label>
+            <Label 
+                Text="Introduce: "               
+                />
+            <Label
+                Text="{Binding Introduce}"
                 ></Label>
         </StackLayout>
     </ContentPage.Content>

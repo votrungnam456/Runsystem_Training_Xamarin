@@ -58,8 +58,8 @@
         <StackLayout RadioButtonGroup.GroupName="Gender" Orientation="Horizontal"
                     AbsoluteLayout.LayoutBounds="0.45,0.49,100,30"
                     AbsoluteLayout.LayoutFlags="PositionProportional">
-            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="Male" Value="True"></RadioButton>
-            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="Female"  Value="False"></RadioButton>
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" IsChecked="{Binding GenderRegister}" Content="Male" Value="True"></RadioButton>
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" IsChecked="{Binding GenderRegister}"  Content="Female"  Value="False"></RadioButton>
         </StackLayout>
         <Label
         Text="Birthday"
@@ -90,6 +90,6 @@
         <Button Text="Sign in"
                 AbsoluteLayout.LayoutBounds="0.5,1,210,50"
             AbsoluteLayout.LayoutFlags="PositionProportional"
-                Clicked="GoToLogin_Clicked"/>
+                 Command="{Binding Source={x:Reference mainRegister}, Path = BindingContext.NavigationLogin}"/>
     </AbsoluteLayout>
 </ContentPage>

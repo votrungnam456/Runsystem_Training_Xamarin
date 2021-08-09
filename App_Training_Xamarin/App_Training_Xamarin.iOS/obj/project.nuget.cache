@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3fjMgay+XJSbEs3iN+9CY2kxwX2xFxXcJBcXNScxX27MSkV1LkkGJ66cAmdT3oYmfuQUJA3vZL9lVp+o5A7VvQ==",
+  "dgSpecHash": "tTB8FgSlq/uHyYGAzD0i6eDzrVuVWkkVHoNoRuOnMVaN4KwlrArgKQdGAsVq2J7IfZCsBP+2YCK+W1uHCC+Dhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\App_Training_Xamarin\\App_Training_Xamarin\\App_Training_Xamarin.iOS\\App_Training_Xamarin.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2012\\xamarin.forms.maps.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }

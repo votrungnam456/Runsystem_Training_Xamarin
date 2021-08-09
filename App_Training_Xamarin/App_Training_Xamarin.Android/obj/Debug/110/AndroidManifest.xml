@@ -11,6 +11,8 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="App_Training_Xamarin.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDlX01rWxiW8ItBy_br8y5N62M78XK1Je0" />
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="App_Training_Xamarin" android:theme="@style/MainTheme" android:name="crc648abdc7bf62915523.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

@@ -51,7 +51,7 @@
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}"
                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5}"
                     WidthRequest="120"
-                    Clicked="GoToRegister_Clicked"
+                    Command="{Binding NavigationRegister}"
                     />
 
             </RelativeLayout>   
