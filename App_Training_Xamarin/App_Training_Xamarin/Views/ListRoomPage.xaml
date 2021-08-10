@@ -6,135 +6,45 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <ScrollView BackgroundColor="DarkGray"
+            <Grid  BackgroundColor="DarkGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <SearchBar x:Name="searchBar" Grid.Row="0" HeightRequest="40"/>
+                <Button Text="Search"  HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"
+                            Command="{Binding FilterCommand}" CommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>
+                <ScrollView  Grid.Row="1" Grid.ColumnSpan="2"
                         x:Name="MyScrollView"
                         Orientation="Vertical">
-                <ListView ItemsSource="{Binding Rooms}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Grid x:Name="gridListRoom">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"></RowDefinition>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                                        <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                                        <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                                        <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                                    </Grid.ColumnDefinitions>
-                                    <Label Grid.Row="0" HorizontalOptions="Center"  Grid.Column="0"  Text="{Binding IdRoom}"></Label>
-                                    <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="1" Text="{Binding NameRoom}"></Label>
-                                    <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="2" Text="{Binding Price}"></Label>
-                                    <Button  Grid.Row="0" HorizontalOptions="Center" Grid.Column="3" Text="Detail" Command="{Binding Source={x:Reference main}, Path = BindingContext.DetailCommand}" CommandParameter="{Binding .}"></Button>
-                                </Grid>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </ScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!--<ScrollView BackgroundColor="DarkGray"
-                        x:Name="MyScrollView"
-                        Orientation="Vertical">
-                
-                <StackLayout>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Label Grid.Row="0" HorizontalOptions="Center"  Grid.Column="0" Text="R001"></Label>
-                        <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="1" Text="Room 001"></Label>
-                        <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Button  Grid.Row="0" HorizontalOptions="Center" Grid.Column="3" Text="Detail" Clicked="Button_Clicked"></Button>
-                        <Label Grid.Row="1" HorizontalOptions="Center" Grid.Column="0" Text="R002"></Label>
-                        <Label Grid.Row="1" HorizontalOptions="Center" Grid.Column="1" Text="Room 002"></Label>
-                        <Label Grid.Row="1" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="2" HorizontalOptions="Center" Grid.Column="0" Text="R003"></Label>
-                        <Label Grid.Row="2" HorizontalOptions="Center" Grid.Column="1" Text="Room 003"></Label>
-                        <Label Grid.Row="2" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="3" HorizontalOptions="Center" Grid.Column="0" Text="R004"></Label>
-                        <Label Grid.Row="3" HorizontalOptions="Center" Grid.Column="1" Text="Room 004"></Label>
-                        <Label Grid.Row="3" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="4" HorizontalOptions="Center" Grid.Column="0" Text="R005"></Label>
-                        <Label Grid.Row="4" HorizontalOptions="Center" Grid.Column="1" Text="Room 005"></Label>
-                        <Label Grid.Row="4" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="5" HorizontalOptions="Center" Grid.Column="0" Text="R006"></Label>
-                        <Label Grid.Row="5" HorizontalOptions="Center" Grid.Column="1" Text="Room 006"></Label>
-                        <Label Grid.Row="5" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="6" HorizontalOptions="Center" Grid.Column="0" Text="R007"></Label>
-                        <Label Grid.Row="6" HorizontalOptions="Center" Grid.Column="1" Text="Room 007"></Label>
-                        <Label Grid.Row="6" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="7" HorizontalOptions="Center" Grid.Column="0" Text="R008"></Label>
-                        <Label Grid.Row="7" HorizontalOptions="Center" Grid.Column="1" Text="Room 008"></Label>
-                        <Label Grid.Row="7" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="8" HorizontalOptions="Center" Grid.Column="0" Text="R009"></Label>
-                        <Label Grid.Row="8" HorizontalOptions="Center" Grid.Column="1" Text="Room 009"></Label>
-                        <Label Grid.Row="8" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                        <Label Grid.Row="9" HorizontalOptions="Center" Grid.Column="0" Text="R010"></Label>
-                        <Label Grid.Row="9" HorizontalOptions="Center" Grid.Column="1" Text="Room 010"></Label>
-                        <Label Grid.Row="9" HorizontalOptions="Center" Grid.Column="2" Text="200000"></Label>
-                    </Grid>
-                    <BoxView
-                BackgroundColor="Red"
-                 HeightRequest="100"/>
-                    <BoxView
-                BackgroundColor="Orange"
-                HeightRequest="100"/>
-                    <BoxView
-                BackgroundColor="Yellow"
-                HeightRequest="100" />
-                    <BoxView
-                BackgroundColor="GreenYellow"
-                HeightRequest="100"/>
-                    <BoxView
-                BackgroundColor="Green"
-                HeightRequest="100" />
-                    <BoxView
-                BackgroundColor="Cyan"
-                HeightRequest="100" />
-                    <BoxView
-                BackgroundColor="Blue"
-                HeightRequest="100" />
-                    <BoxView
-                BackgroundColor="Purple"
-                 HeightRequest="100"/>
-
-                </StackLayout>
-            </ScrollView>-->
+                    <ListView ItemsSource="{Binding Rooms}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid x:Name="gridListRoom">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
+                                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
+                                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
+                                            <ColumnDefinition Width="2.5*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" HorizontalOptions="Center"  Grid.Column="0"  Text="{Binding IdRoom}"></Label>
+                                        <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="1" Text="{Binding NameRoom}"></Label>
+                                        <Label Grid.Row="0" HorizontalOptions="Center" Grid.Column="2" Text="{Binding Price}"></Label>
+                                        <Button  Grid.Row="0" HorizontalOptions="Center" Grid.Column="3" Text="Detail" Command="{Binding Source={x:Reference main}, Path = BindingContext.DetailCommand}" CommandParameter="{Binding .}"></Button>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

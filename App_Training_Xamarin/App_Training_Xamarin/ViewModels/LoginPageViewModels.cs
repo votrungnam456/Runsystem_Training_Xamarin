@@ -21,6 +21,8 @@ namespace App_Training_Xamarin.ViewModels
         private DateTime _birthdayRegister;
         private bool _genderRegister;
         private Command _navigationRegister,_navigationLogin;
+        private User _userCheck;
+        private List<string> _listImage;
         GetDataUsers dataUsers = new GetDataUsers();
         public LoginPageViewModels(INavigation navigation)
         {
@@ -30,6 +32,10 @@ namespace App_Training_Xamarin.ViewModels
             RegisterCommand = new Command(async () => await Register());
             NavigationLogin = new Command(async () => await navigationToLogin());
             NavigationRegister = new Command(async () => await navigationToRegister());
+            ListImage = new List<string>()
+            {
+                "https://image.shutterstock.com/image-photo/beautiful-abstract-grunge-decorative-navy-260nw-539880832.jpg","https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768","https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg"
+            };
         }
         public async Task navigationToLogin()
         {
@@ -48,21 +54,19 @@ namespace App_Training_Xamarin.ViewModels
             registerPage.BindingContext = this;
             await Navigation.PushModalAsync(registerPage);
         }
-
         public async Task Login()
-        {
-            User userCheck = ListUser.FirstOrDefault(user => user.Username.Equals(Username));
-            if (userCheck != null)
+        {            
+            UserCheck = ListUser.FirstOrDefault(user => user.Username.Equals(Username));
+            if (UserCheck != null)
             {
-                if (userCheck.Password.Equals(Password))
+                if (UserCheck.Password.Equals(Password))
                 {
                     var homePage = new HomePage();
-                    homePage.BindingContext = userCheck;
+                    homePage.BindingContext = this;
                     await Navigation.PushModalAsync(homePage);
                 }
             }
         }
-
         public async Task Register()
         {
             User newUser = new User() { Name = NameRegister, Username = UsernameRegister, Password = PasswordRegister, BirthDay = BirthdayRegister, Gender = GenderRegister, Introduce = IntroduceRegister };
@@ -85,5 +89,7 @@ namespace App_Training_Xamarin.ViewModels
         public Command RegisterCommand { get => _registerCommand; set => _registerCommand = value; }
         public Command NavigationRegister { get => _navigationRegister; set => _navigationRegister = value; }
         public Command NavigationLogin { get => _navigationLogin; set => _navigationLogin = value; }
+        public User UserCheck { get => _userCheck; set => _userCheck = value; }
+        public List<string> ListImage { get => _listImage; set => _listImage = value; }
     }
 }

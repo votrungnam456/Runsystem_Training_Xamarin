@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tTB8FgSlq/uHyYGAzD0i6eDzrVuVWkkVHoNoRuOnMVaN4KwlrArgKQdGAsVq2J7IfZCsBP+2YCK+W1uHCC+Dhg==",
+  "dgSpecHash": "38mfAf9QtRFWudRwoLDbz7wyZXftGXi3O1HiCWJJ7GfN0NBU4LxFvePKWa3C3cgMS2RzeiqQpmSHscSdyM5DTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\App_Training_Xamarin\\App_Training_Xamarin\\App_Training_Xamarin.iOS\\App_Training_Xamarin.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",

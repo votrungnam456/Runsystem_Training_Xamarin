@@ -14,26 +14,26 @@
                 />
             <Label
                 x:Name="nameLabel"
-                Text="{Binding Name}"
+                Text="{Binding UserCheck.Name}"
                 ></Label>
             <Label 
                 Text="Birthday: "               
                 />
             <Label
                 x:Name="birthdayLabel"
-                Text="{Binding Birthday}"/>
+                Text="{Binding UserCheck.Birthday}"/>
             <Label 
                 Text="Gender: "               
                 />
             <Label
                 x:Name="genderLabel"
-                Text="{Binding Gender}"
+                Text="{Binding UserCheck.Gender}"
                 ></Label>
             <Label 
                 Text="Introduce: "               
                 />
             <Label
-                Text="{Binding Introduce}"
+                Text="{Binding UserCheck.Introduce}"
                 ></Label>
         </StackLayout>
     </ContentPage.Content>

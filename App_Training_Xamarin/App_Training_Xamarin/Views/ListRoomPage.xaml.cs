@@ -19,6 +19,7 @@ namespace App_Training_Xamarin.Views
         {
             InitializeComponent();
             listRoomsModel = new ListRoomPageModels(Navigation);
+            
             BindingContext = listRoomsModel;
         }
 

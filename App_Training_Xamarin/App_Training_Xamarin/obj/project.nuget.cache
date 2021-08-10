@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w+yrfSKHIb0LnYKCFqgwxhtbgPswml45/5DMHpxp47TyHMRyjWjRmuXnbwu0IhVbOijx8XoXSVnbqUizh6s99g==",
+  "dgSpecHash": "2GJz+BOSB8rhjfyts0MeEgrm8O3VL6xuGILUmn7iUr3HIoImRuhPmFtPSXCw41J5bNV2nwS5q3+Kdjuvo6apUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\App_Training_Xamarin\\App_Training_Xamarin\\App_Training_Xamarin\\App_Training_Xamarin.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

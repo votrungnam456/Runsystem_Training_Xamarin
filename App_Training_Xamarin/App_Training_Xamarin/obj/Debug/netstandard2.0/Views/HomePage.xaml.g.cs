@@ -17,11 +17,15 @@ namespace App_Training_Xamarin.Views {
     public partial class HomePage : global::Xamarin.Forms.FlyoutPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.FlyoutPage MainHomePage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::App_Training_Xamarin.Views.HomePageFlyout FlyoutPage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomePage));
+            MainHomePage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.FlyoutPage>(this, "MainHomePage");
             FlyoutPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::App_Training_Xamarin.Views.HomePageFlyout>(this, "FlyoutPage");
         }
     }
