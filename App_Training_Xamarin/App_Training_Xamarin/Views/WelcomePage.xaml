@@ -4,13 +4,16 @@
              x:Class="App_Training_Xamarin.Views.WelcomePage"
              x:Name="mainWelcomePage"
              xmlns:control="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
-             Title="{Binding UserCheck.Name}">
+             Title="{Binding UserCheck.Name , StringFormat='Welcome {0}'}">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Cross Hotel"
                 HorizontalOptions="CenterAndExpand" 
                    />
             <CarouselView x:Name="mainCarousel" HeightRequest="200" ItemsSource="{Binding ListImage }" >
+                <!--<CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CarouselView.ItemsLayout>-->
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <Image HeightRequest="200" WidthRequest="300" Source="{Binding .}"/>
@@ -18,7 +21,7 @@
                 </CarouselView.ItemTemplate>
                 <CarouselView.EmptyViewTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding ., StringFormat='Image did not find.'}"
+                        <Label Text="{Binding ., StringFormat='Image {0} did not find.'}"
                        Margin="10,25,10,10"
                        FontAttributes="Bold"
                        FontSize="18"

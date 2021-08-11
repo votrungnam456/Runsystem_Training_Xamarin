@@ -16,5 +16,6 @@ namespace App_Training_Xamarin.Views
         public string Title { get; set; }
 
         public Type TargetType { get; set; }
+        public string UrlIcon { get; set; }
     }
 }

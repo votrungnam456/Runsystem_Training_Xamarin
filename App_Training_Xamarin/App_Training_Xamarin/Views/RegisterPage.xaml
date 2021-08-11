@@ -5,10 +5,10 @@
              x:Name="mainRegister">
     <AbsoluteLayout>
         <Label
+            
         Text="Register"
             AbsoluteLayout.LayoutBounds="0.5,0.1,150,50"
-            AbsoluteLayout.LayoutFlags="PositionProportional"    
-            
+            AbsoluteLayout.LayoutFlags="PositionProportional"               
             FontSize="30"
             HorizontalOptions="Center"
             LineBreakMode="WordWrap" />
@@ -20,6 +20,7 @@
             
             LineBreakMode="WordWrap" />
         <Entry x:Name="NameEntry" 
+               Placeholder="Your name..."
                Text="{Binding NameRegister}"
                AbsoluteLayout.LayoutBounds="0.75,0.20,240,50"
                AbsoluteLayout.LayoutFlags="PositionProportional"              
@@ -32,6 +33,7 @@
             
             LineBreakMode="WordWrap" />
         <Entry x:Name="IdEntry"     
+               Placeholder="Username"
                Text="{Binding UsernameRegister}"
                AbsoluteLayout.LayoutBounds="0.8,0.29,210,50"
                AbsoluteLayout.LayoutFlags="PositionProportional"
@@ -43,6 +45,7 @@
             FontSize="20"
             LineBreakMode="WordWrap" />
         <Entry x:Name="PasswordEntry"     
+               Placeholder="****"
                Text="{Binding PasswordRegister}"
                AbsoluteLayout.LayoutBounds="0.8,0.38,210,50"
                AbsoluteLayout.LayoutFlags="PositionProportional"
@@ -80,6 +83,7 @@
             
             LineBreakMode="WordWrap" />
         <Editor x:Name="IntroduceEditor"
+                Placeholder="Introduce yourself"
             AbsoluteLayout.LayoutBounds="0.8,0.8,210,120"
             AbsoluteLayout.LayoutFlags="PositionProportional"
                 Text="{Binding IntroduceRegister}"/>

@@ -14,7 +14,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <SearchBar x:Name="searchBar" Grid.Row="0" HeightRequest="40"/>
+                <SearchBar  x:Name="searchBar" Grid.Row="0" HeightRequest="40"/>
                 <Button Text="Search"  HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"
                             Command="{Binding FilterCommand}" CommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>
                 <ScrollView  Grid.Row="1" Grid.ColumnSpan="2"

@@ -33,11 +33,12 @@ namespace App_Training_Xamarin.Views
             {
                 MenuItems = new ObservableCollection<HomePageFlyoutMenuItem>(new[]
                 {
-                    new HomePageFlyoutMenuItem { Id = 0, Title = "Home" , TargetType=typeof(WelcomePage)},
-                    new HomePageFlyoutMenuItem { Id = 1, Title = "Introduce",TargetType=typeof(InfomationPage) },
-                    new HomePageFlyoutMenuItem { Id = 2, Title = "About PG",TargetType=typeof(IntroduceDevPage) },
-                    new HomePageFlyoutMenuItem { Id = 3, Title = "List room",TargetType=typeof(ListRoomPage)},
-                    new HomePageFlyoutMenuItem { Id = 4, Title = "Personal infomation",TargetType=typeof(PersonalInfomationPage) },
+                    new HomePageFlyoutMenuItem { Id = 0, Title = "Home" , TargetType=typeof(WelcomePage), UrlIcon="https://image.flaticon.com/icons/png/512/2/2144.png"},
+                    new HomePageFlyoutMenuItem { Id = 1, Title = "Introduce",TargetType=typeof(InfomationPage), UrlIcon="https://static.thenounproject.com/png/2043850-200.png"},
+                    new HomePageFlyoutMenuItem { Id = 2, Title = "About PG",TargetType=typeof(IntroduceDevPage), UrlIcon="https://i.pinimg.com/474x/53/fa/bf/53fabf5ac9ed557319a2a0fa5ae535d8.jpg" },
+                    new HomePageFlyoutMenuItem { Id = 3, Title = "List room",TargetType=typeof(ListRoomPage), UrlIcon="https://image.flaticon.com/icons/png/512/1950/1950715.png"},
+                    new HomePageFlyoutMenuItem { Id = 4, Title = "Personal infomation",TargetType=typeof(PersonalInfomationPage), UrlIcon="https://cdn.iconscout.com/icon/premium/png-512-thumb/personal-information-2240981-1897728.png" },
+                    new HomePageFlyoutMenuItem { Id = 5, Title = "Setup",TargetType=typeof(HomePage), UrlIcon="https://icon-library.com/images/set-up-icon/set-up-icon-24.jpg" },
                 });
             }
 

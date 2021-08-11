@@ -61,9 +61,9 @@ namespace App_Training_Xamarin.ViewModels
             {
                 if (UserCheck.Password.Equals(Password))
                 {
-                    var homePage = new HomePage();
-                    homePage.BindingContext = this;
-                    await Navigation.PushModalAsync(homePage);
+                    var loading = new LoadingPage();
+                    loading.BindingContext = this;
+                    await Navigation.PushModalAsync(loading);
                 }
             }
         }
