@@ -21,7 +21,7 @@ namespace App_Training_Xamarin.Views
         private void AutoSlide()
         {
             loginViewModel = new LoginPageViewModels(Navigation);
-            Device.StartTimer(TimeSpan.FromSeconds(5), (Func<bool>)(() =>
+            Device.StartTimer(TimeSpan.FromSeconds(4), (Func<bool>)(() =>
             {
 
                 mainCarousel.Position = (mainCarousel.Position + 1)%loginViewModel.ListImage.Count;

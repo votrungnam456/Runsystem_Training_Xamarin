@@ -24,3 +24,4 @@ C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Trainin
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\App_Training_Xamarin.pdb
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\App_Training_Xamarin.csproj.AssemblyReference.cache
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\LoadingPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\SetupPage.xaml.g.cs
