@@ -16,7 +16,7 @@ namespace App_Training_Xamarin.ViewModels
         private Command _loginCommand;
         private Command _registerCommand;
         private List<User> _listUser;
-        private string username, password;
+        private string _username, _password;
         private string _usernameRegister, _passwordRegister, __introduceRegister, _nameRegister;
         private DateTime _birthdayRegister;
         private bool _genderRegister;
@@ -77,8 +77,8 @@ namespace App_Training_Xamarin.ViewModels
         }
         public INavigation Navigation { get => _navigation; set => _navigation = value; }
         public List<User> ListUser { get => _listUser; set => _listUser = value; }
-        public string Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
+        public string Username { get => _username; set => _username = value; }
+        public string Password { get => _password; set => _password = value; }
         public Command LoginCommand { get => _loginCommand; set => _loginCommand = value; }
         public string UsernameRegister { get => _usernameRegister; set => _usernameRegister = value; }
         public string PasswordRegister { get => _passwordRegister; set => _passwordRegister = value; }

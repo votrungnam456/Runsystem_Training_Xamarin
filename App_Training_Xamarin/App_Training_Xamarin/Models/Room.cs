@@ -6,11 +6,11 @@ namespace App_Training_Xamarin.Models
 {
     public class Room
     {
-        string idRoom, nameRoom;
-        double price;
+        string _idRoom, _nameRoom;
+        double _price;
 
-        public string IdRoom { get => idRoom; set => idRoom = value; }
-        public string NameRoom { get => nameRoom; set => nameRoom = value; }
-        public double Price { get => price; set => price = value; }
+        public string IdRoom { get => _idRoom; set => _idRoom = value; }
+        public string NameRoom { get => _nameRoom; set => _nameRoom = value; }
+        public double Price { get => _price; set => _price = value; }
     }
 }

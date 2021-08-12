@@ -5,7 +5,7 @@ using App_Training_Xamarin.Models;
 using System.Threading.Tasks;
 namespace App_Training_Xamarin.Services
 {
-    public class GetDataUsers: IDataStore<User>
+    public class GetDataUsers
     {
         public List<User> listusers;
         public GetDataUsers()
