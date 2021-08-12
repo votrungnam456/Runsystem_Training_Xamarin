@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.NavigationView.NavigationPage3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="ButtonGoToHomePage3" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  Clicked="GoToHome_Clicked"></Button>
+            <Button x:Name="ButtonNextPage3" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  Clicked="NextPage_Clicked"></Button>
+            <Button x:Name="ButtonPreviousPage3"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  Clicked="PreviousPage_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

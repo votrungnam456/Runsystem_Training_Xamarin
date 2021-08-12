@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.NavigationView.NavigationPage1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="Next Page" Clicked="NextPage_Clicked"></Button>
+            <Button VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="Previous Page" Clicked="PreviousPage_Clicked"></Button>
+            <!--<Button  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="Remove one page before this"  Clicked="RemovePage_Clicked"></Button>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

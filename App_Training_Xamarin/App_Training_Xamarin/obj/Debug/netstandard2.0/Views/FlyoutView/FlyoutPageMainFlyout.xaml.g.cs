@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.HomePageFlyout.xaml", "Views/HomePageFlyout.xaml", typeof(global::App_Training_Xamarin.Views.HomePageFlyout))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.FlyoutView.FlyoutPageMainFlyout.xaml", "Views/FlyoutView/FlyoutPageMainFlyout.xaml", typeof(global::App_Training_Xamarin.Views.FlyoutView.FlyoutPageMainFlyout))]
 
-namespace App_Training_Xamarin.Views {
+namespace App_Training_Xamarin.Views.FlyoutView {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\HomePageFlyout.xaml")]
-    public partial class HomePageFlyout : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FlyoutView\\FlyoutPageMainFlyout.xaml")]
+    public partial class FlyoutPageMainFlyout : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView MenuItemsListView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomePageFlyout));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FlyoutPageMainFlyout));
             MenuItemsListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MenuItemsListView");
         }
     }

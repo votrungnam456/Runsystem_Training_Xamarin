@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.InfomationPage.xaml", "Views/InfomationPage.xaml", typeof(global::App_Training_Xamarin.Views.InfomationPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.NavigationView.NavigationPage4.xaml", "Views/NavigationView/NavigationPage4.xaml", typeof(global::App_Training_Xamarin.Views.NavigationView.NavigationPage4))]
 
-namespace App_Training_Xamarin.Views {
+namespace App_Training_Xamarin.Views.NavigationView {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\InfomationPage.xaml")]
-    public partial class InfomationPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\NavigationView\\NavigationPage4.xaml")]
+    public partial class NavigationPage4 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(InfomationPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(NavigationPage4));
         }
     }
 }

@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.LoadingPage.xaml", "Views/LoadingPage.xaml", typeof(global::App_Training_Xamarin.Views.LoadingPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.FlyoutPageMain.xaml", "Views/FlyoutPageMain.xaml", typeof(global::App_Training_Xamarin.Views.FlyoutPageMain))]
 
 namespace App_Training_Xamarin.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LoadingPage.xaml")]
-    public partial class LoadingPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FlyoutPageMain.xaml")]
+    public partial class FlyoutPageMain : global::Xamarin.Forms.FlyoutPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ProgressBar progressBar;
+        private global::App_Training_Xamarin.Views.FlyoutPageMainFlyout FlyoutPage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoadingPage));
-            progressBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ProgressBar>(this, "progressBar");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FlyoutPageMain));
+            FlyoutPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::App_Training_Xamarin.Views.FlyoutPageMainFlyout>(this, "FlyoutPage");
         }
     }
 }

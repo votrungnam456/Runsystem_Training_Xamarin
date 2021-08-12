@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.RoomDetail.xaml", "Views/RoomDetail.xaml", typeof(global::App_Training_Xamarin.Views.RoomDetail))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_Training_Xamarin.Views.NavigationPage1.xaml", "Views/NavigationPage1.xaml", typeof(global::App_Training_Xamarin.Views.Navigation.NavigationPage1))]
 
-namespace App_Training_Xamarin.Views {
+namespace App_Training_Xamarin.Views.Navigation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\RoomDetail.xaml")]
-    public partial class RoomDetail : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\NavigationPage1.xaml")]
+    public partial class NavigationPage1 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RoomDetail));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(NavigationPage1));
         }
     }
 }
