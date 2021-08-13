@@ -25,3 +25,13 @@ C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Trainin
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\TabbedView\TabbedPageUsingTemplate.xaml.g.cs
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\FlyoutView\FlyoutPageMain.xaml.g.cs
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\FlyoutView\FlyoutPageMainFlyout.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\ExplicitStylePage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\ExplicitStyleControlLevelPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\implicitStylePageLevelPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\ImplicitStyleControllLevelPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\GlobalStylePage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\DynamicStylePage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\InheritanceStylePage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\StyleClassPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\PageUsingCss.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\index.css.g.cs

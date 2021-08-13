@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.UsingStyle.ImplicitStyleControllLevelPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stackLayoutImplicitStyleControlLevel" Padding="0,20,0,0">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Label">
+                        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="TextColor" Value="Red"/>
+                        <Setter Property="BackgroundColor" Value="Blue"/>
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Label Text="This label using implicit style in control page"/>
+            <Label Text="This label using implicit style in control page"/>
+            <Label Text="This label using implicit style in control page"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

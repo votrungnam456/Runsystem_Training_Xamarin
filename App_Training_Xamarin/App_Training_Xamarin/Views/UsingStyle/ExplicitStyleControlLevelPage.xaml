@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.UsingStyle.ExplicitStyleControlLevelPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stackLayoutMain" Padding="0,20,0,0">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="labelRedStyle" TargetType="Label">
+                        <Setter Property="TextColor" Value="Red"/>
+                        <Setter Property="BackgroundColor" Value="Black"/>
+                        <Setter Property="HorizontalOptions" Value="Center"/>
+                    </Style>
+                    <Style x:Key="buttonGreenStyle" TargetType="Button">
+                        <Setter Property="TextColor" Value="Aqua"/>
+                        <Setter Property="BackgroundColor" Value="Black"/>
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Label Text="This is label using Explicit style in control level" Style="{StaticResource labelRedStyle}" />
+            <Button Text="This is button using Explicit style in page level" Style="{StaticResource buttonGreenStyle}"/>
+            <Label Text="Watch out this viewbox below, this viewbox created and set style in code behind" VerticalOptions="Center" HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

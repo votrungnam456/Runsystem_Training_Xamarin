@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using App_Training_Xamarin.Views.TabbedView;
+using App_Training_Xamarin.Views.UsingStyle;
 namespace App_Training_Xamarin.Views.FlyoutView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -35,9 +36,14 @@ namespace App_Training_Xamarin.Views.FlyoutView
                 {
                     new FlyoutPageMainFlyoutMenuItem { Id = 0, Title = "Home - Navigation" ,TargetType=typeof(MainPage)},
                     new FlyoutPageMainFlyoutMenuItem { Id = 1, Title = "Tabbed",TargetType=typeof(MainTabbedPage) },
-                    new FlyoutPageMainFlyoutMenuItem { Id = 2, Title = "Page 3",TargetType=typeof(MainPage) },
-                    new FlyoutPageMainFlyoutMenuItem { Id = 3, Title = "Page 4",TargetType=typeof(MainPage) },
-                    new FlyoutPageMainFlyoutMenuItem { Id = 4, Title = "Page 5",TargetType=typeof(MainPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 2, Title = "Explicit style page level",TargetType=typeof(ExplicitStylePage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 3, Title = "Explicit style control level",TargetType=typeof(ExplicitStyleControlLevelPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 4, Title = "Impolicit style page level",TargetType=typeof(ImplicitStylePageLevelPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 5, Title = "Impolicit style control level",TargetType=typeof(ImplicitStyleControllLevelPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 6,Title = "Global style",TargetType=typeof(GlobalStylePage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 7,Title = "Dynamic style",TargetType=typeof(DynamicStylePage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 8,Title = "Class style",TargetType=typeof(StyleClassPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 9,Title = "Style using css",TargetType=typeof(PageUsingCss) },
                 });
             }
 

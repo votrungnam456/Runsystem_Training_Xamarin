@@ -6,5 +6,5 @@
             BarBackgroundColor="Yellow" BarTextColor="Red" SelectedTabColor="Blue" UnselectedTabColor="White"
             >
     <local:TabbedChild1 Title="Home" IconImageSource="https://image.flaticon.com/icons/png/512/69/69524.png"/>
-    <local:TabbedPageUsingTemplate  IconImageSource="https://image.flaticon.com/icons/png/512/69/69524.png" Title="Tabbed Template"></local:TabbedPageUsingTemplate>
+    <local:TabbedPageUsingTemplate  IconImageSource="https://image.flaticon.com/icons/png/512/69/69524.png" Title="Tabbed Template"/>
 </TabbedPage>

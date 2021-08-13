@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.UsingStyle.GlobalStylePage"
+             xmlns:local="clr-namespace:App_Training_Xamarin"
+             xmlns:application="clr-namespace:App_Training_Xamarin">
+    <ContentPage.Content>
+        <StackLayout x:Name="stackLayouyGlobalStyle">
+            <!--<Button Text="This is button using gobal style"/>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
