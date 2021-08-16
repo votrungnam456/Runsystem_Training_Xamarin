@@ -19,6 +19,7 @@ namespace App_Training_Xamarin.Views.UsingStyle
             button.Text = "This button created in code behind and set global style";
             button.Style = (Style)Application.Current.Resources["buttonStyle2"];
             stackLayouyGlobalStyle.Children.Add(button);
+            Resources["buttonStyle"] = (Style)Application.Current.Resources["buttonStyle"];
         }
     }
 }

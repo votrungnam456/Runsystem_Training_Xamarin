@@ -35,3 +35,7 @@ C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Trainin
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\StyleClassPage.xaml.g.cs
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\PageUsingCss.xaml.g.cs
 C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\UsingStyle\index.css.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\Themes\LightTheme.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\Themes\UsingLightTheme.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\Themes\AppThemeBindingPage.xaml.g.cs
+C:\Users\DELL\source\repos\App_Training_Xamarin\App_Training_Xamarin\App_Training_Xamarin\obj\Debug\netstandard2.0\Views\TriggerView\TriggerPage.xaml.g.cs

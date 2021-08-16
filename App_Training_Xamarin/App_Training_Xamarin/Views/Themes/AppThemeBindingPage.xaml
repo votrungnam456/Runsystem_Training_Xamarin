@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.Themes.AppThemeBindingPage">
+    <ContentPage.Resources>
+
+        <!-- Light colors -->
+        <Color x:Key="LightPrimaryColor">WhiteSmoke</Color>
+        <Color x:Key="LightSecondaryColor">Black</Color>
+
+        <!-- Dark colors -->
+        <Color x:Key="DarkPrimaryColor">Teal</Color>
+        <Color x:Key="DarkSecondaryColor">White</Color>
+
+        <Style x:Key="ButtonStyle"
+               TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+        </Style>
+
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="This text is green in light mode, red in dark mode and yellow in unspecified."
+               TextColor="{AppThemeBinding Default=Yellow, Light=Green, Dark=Red}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

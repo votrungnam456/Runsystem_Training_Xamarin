@@ -11,6 +11,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using App_Training_Xamarin.Views.TabbedView;
 using App_Training_Xamarin.Views.UsingStyle;
+using App_Training_Xamarin.Views.Themes;
 namespace App_Training_Xamarin.Views.FlyoutView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -44,6 +45,8 @@ namespace App_Training_Xamarin.Views.FlyoutView
                     new FlyoutPageMainFlyoutMenuItem { Id = 7,Title = "Dynamic style",TargetType=typeof(DynamicStylePage) },
                     new FlyoutPageMainFlyoutMenuItem { Id = 8,Title = "Class style",TargetType=typeof(StyleClassPage) },
                     new FlyoutPageMainFlyoutMenuItem { Id = 9,Title = "Style using css",TargetType=typeof(PageUsingCss) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 10,Title = "Light Theme",TargetType=typeof(UsingLightTheme) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 11,Title = "App theme binding",TargetType=typeof(AppThemeBindingPage) },
                 });
             }
 
