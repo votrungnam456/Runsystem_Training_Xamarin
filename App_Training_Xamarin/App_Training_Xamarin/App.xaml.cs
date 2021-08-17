@@ -6,6 +6,7 @@ using App_Training_Xamarin.Views.FlyoutView;
 using App_Training_Xamarin.Views.UsingStyle;
 using App_Training_Xamarin.Views.Themes;
 using App_Training_Xamarin.Views.TriggerView;
+using App_Training_Xamarin.Views.BehaviorView;
 namespace App_Training_Xamarin
 {
     public partial class App : Application
@@ -23,7 +24,7 @@ namespace App_Training_Xamarin
             Resources.Add("buttonStyle2", buttonStyle2);
             OSAppTheme currentTheme = Application.Current.RequestedTheme;
             Application.Current.UserAppTheme = OSAppTheme.Dark;
-            MainPage = new TriggerPage();
+            MainPage = new EventToCommandPage();
         }
 
         protected override void OnStart()

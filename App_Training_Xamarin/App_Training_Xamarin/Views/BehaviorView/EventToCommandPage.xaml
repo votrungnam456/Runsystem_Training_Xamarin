@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Training_Xamarin.Views.BehaviorView.EventToCommandPage"
+             xmlns:behavior ="clr-namespace:App_Training_Xamarin.Views.BehaviorView"
+             xmlns:viewModel ="clr-namespace:App_Training_Xamarin.ViewModels"
+             >
+    <ContentPage.BindingContext>
+        <viewModel:UserViewModels />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <viewModel:SelectedItemConverter x:Key="selectedItemConverter" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical">
+            <ListView x:Name="list"
+                ItemsSource="{Binding UserList}">
+                <ListView.Behaviors>
+                    <behavior:ListViewSelectedItemBehavior
+                        Command="{Binding OutputAgeCommand}"
+                        Converter="{StaticResource selectedItemConverter}"
+                        CommandParameter="SelectedItem" />
+                </ListView.Behaviors>
+            </ListView>
+            <Label
+                Text="{Binding SelectedItemText}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

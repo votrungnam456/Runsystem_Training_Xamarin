@@ -11,7 +11,8 @@ namespace App_Training_Xamarin.Views.TriggerView
         {
             double result;
             bool isNumber = double.TryParse(sender.Text, out result);
-            sender.TextColor = isNumber ? Color.Red : Color.Green;
+
+            sender.TextColor = (isNumber || result >= 18 || result <= 27) ? Color.Green : Color.Red;
         }
     }
 }
