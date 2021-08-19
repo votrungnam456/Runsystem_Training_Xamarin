@@ -18,13 +18,14 @@ namespace App_Training_Xamarin
             {
                 Setters = {
                 new Setter { Property = Button.TextColorProperty, Value = Color.Tomato },
-                new Setter { Property = Button.FontSizeProperty, Value = "30" }
+                new Setter { Property = Button.FontSizeProperty, Value = "30" },
+                 new Setter { Property = Button.TextProperty, Value = "ABC" }
             }
             };
             Resources.Add("buttonStyle2", buttonStyle2);
             OSAppTheme currentTheme = Application.Current.RequestedTheme;
-            Application.Current.UserAppTheme = OSAppTheme.Dark;
-            MainPage = new EventToCommandPage();
+            Application.Current.UserAppTheme = OSAppTheme.Light;
+            MainPage = new FlyoutPageMain();
         }
 
         protected override void OnStart()

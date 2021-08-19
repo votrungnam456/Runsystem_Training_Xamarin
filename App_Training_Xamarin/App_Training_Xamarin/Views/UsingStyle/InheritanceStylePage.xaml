@@ -9,14 +9,16 @@
                         Value="Center" />
                 <Setter Property="VerticalOptions"
                         Value="CenterAndExpand" />
+                <Setter Property="BackgroundColor"
+                        Value="Red" />
             </Style>
             <Style x:Key="labelStyle" TargetType="Label"
                    BasedOn="{StaticResource baseStyle}">
-                <Setter Property="TextColor" Value="Teal" />
+                <Setter Property="TextColor" Value="Yellow" />
             </Style>
-            <Style x:Key="buttonStyle" TargetType="Button"
+            <Style x:Key="entryStyle" TargetType="Entry"
                    BasedOn="{StaticResource baseStyle}">
-                <Setter Property="BorderColor" Value="Lime" />
+                <Setter Property="TextColor" Value="Lime" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -24,8 +26,8 @@
         <StackLayout Padding="0,20,0,0">
             <Label Text="This is label using explicit style with inheritance style"
                    Style="{StaticResource labelStyle}" />
-            <Button Text="This is button using explicit style with inheritance style"
-                    Style="{StaticResource buttonStyle}" />
+            <Entry VerticalOptions="Center" Text="This is entry using explicit style with inheritance style"
+                    Style="{StaticResource entryStyle}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

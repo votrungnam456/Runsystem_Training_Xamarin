@@ -6,14 +6,14 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:MultiTriggerConverter x:Key="dataHasBeenEntered" />
-            <Style TargetType="Entry">
+            <!--<Style TargetType="Entry">
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Style.Triggers>
                     <Trigger TargetType="Entry" Property="IsFocused" Value="True">
                         <Setter Property="BackgroundColor" Value="SkyBlue"/>
                     </Trigger>
                 </Style.Triggers>
-            </Style>
+            </Style>-->
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -108,11 +108,12 @@
                         <Trigger TargetType="Entry"
                      Property="Entry.IsFocused" Value="True">
                             <Trigger.EnterActions>
-                                <local:FadeTriggerAction StartsFrom="0" />
+                                <local:FadeTriggerAction StartsFrom="1" />
+                                
                             </Trigger.EnterActions>
                             <Setter Property="TextColor" Value="Red"></Setter>
                             <Trigger.ExitActions>
-                                <local:FadeTriggerAction StartsFrom="1" />
+                                <local:FadeTriggerAction StartsFrom="0" />
                             </Trigger.ExitActions>
                         </Trigger>
                     </Entry.Triggers>

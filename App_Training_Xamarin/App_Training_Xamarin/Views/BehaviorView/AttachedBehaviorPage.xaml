@@ -16,9 +16,8 @@
         <StackLayout>
             <Label Text="Attached Behavior" VerticalOptions="Center" FontSize="30"/>
             <Entry local:NumericValidationBehavior.AttachBehavior="True"/>
-            
-            
             <Entry local:NumericValidationBehavior.AttachBehavior="False"/>
+            
             <Label Text="Xamarin.Form Behavior" VerticalOptions="Center" FontSize="30"/>
             <Entry>
                 <Entry.Behaviors>

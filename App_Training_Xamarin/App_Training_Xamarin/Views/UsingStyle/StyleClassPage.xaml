@@ -38,16 +38,20 @@
             <Setter Property="Rotation"
                     Value="45" />
         </Style>
+
+        <Style TargetType="Label" Class="RedLabel">
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+        <Style TargetType="Label" Class="BlueLabel">
+            <Setter Property="TextColor" Value="Blue"/>
+        </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Margin="20">
             <BoxView StyleClass="Separator" />
-            <BoxView WidthRequest="100"
-                 HeightRequest="100"
-                 HorizontalOptions="Center"
-                 StyleClass="Rounded, Rotated" />
             <BoxView HorizontalOptions="Center"
                  StyleClass="Circle" />
+            <Label StyleClass="RedLabel, BlueLabel" Text="Look at blue circle above, it's have a line above it :V"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

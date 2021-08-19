@@ -13,10 +13,18 @@
                         <Setter Property="TextColor" Value="Red"/>
                         <Setter Property="BackgroundColor" Value="Blue"/>
                     </Style>
+                    <Style TargetType="Label" x:Key="customLabel">
+                        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="TextColor" Value="Yellow"/>
+                        <Setter Property="BackgroundColor" Value="Green"/>
+                        <Setter Property="Text" Value="Vo Trung Nam"/>
+                    </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
             <Label Text="This label using implicit style in control page"/>
-            <Label Text="This label using implicit style in control page"/>
+            <Label  Style="{StaticResource customLabel}"/>
             <Label Text="This label using implicit style in control page"/>
         </StackLayout>
     </ContentPage.Content>

@@ -23,7 +23,7 @@ namespace App_Training_Xamarin.Views.UsingStyle
         {
             if (clicked)
             {
-                Resources["labelStyle"] = Resources["redStyle"];
+                Resources["labelStyle"] = Resources["greenStyle"];
                 clicked = false;
             }
             else
@@ -43,7 +43,7 @@ namespace App_Training_Xamarin.Views.UsingStyle
             }
             else
             {
-                Resources["labelCustomStyle"] = Resources["blueStyle"];
+                Resources["labelCustomStyle"] = Resources["greenStyle"];
                 clicked = true;
             }
         }

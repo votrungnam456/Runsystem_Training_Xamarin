@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -13,7 +14,7 @@ namespace App_Training_Xamarin.ViewModels
         public string SelectedItemText { get; private set; }
         public ICommand OutputAgeCommand { get; set; }
         public ObservableCollection<UserModel> UserList { get; set; }
-
+        public event PropertyChangedEventHandler PropertyChanged;
         public UserViewModels()
         {
             UserList = new ObservableCollection<UserModel>()
@@ -27,7 +28,12 @@ namespace App_Training_Xamarin.ViewModels
         void HandelOutputAgeCommand(UserModel obj)
         {
             SelectedItemText = string.Format("{0} is {1} years old.", obj.Name, 11);
-            OnPropertyChanged("SelectedItemText");
+            OnPropertyChanged(SelectedItemText);
+       
+        }
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 

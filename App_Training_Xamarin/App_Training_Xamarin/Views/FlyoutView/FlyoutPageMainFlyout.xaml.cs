@@ -13,6 +13,7 @@ using App_Training_Xamarin.Views.TabbedView;
 using App_Training_Xamarin.Views.UsingStyle;
 using App_Training_Xamarin.Views.Themes;
 using App_Training_Xamarin.Views.TriggerView;
+using App_Training_Xamarin.Views.BehaviorView;
 namespace App_Training_Xamarin.Views.FlyoutView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -49,6 +50,9 @@ namespace App_Training_Xamarin.Views.FlyoutView
                     new FlyoutPageMainFlyoutMenuItem { Id = 10,Title = "Light Theme",TargetType=typeof(UsingLightTheme) },
                     new FlyoutPageMainFlyoutMenuItem { Id = 11,Title = "App theme binding",TargetType=typeof(AppThemeBindingPage) },
                     new FlyoutPageMainFlyoutMenuItem { Id = 12,Title = "Trigger",TargetType=typeof(TriggerPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 13,Title = "Behavior",TargetType=typeof(AttachedBehaviorPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 14,Title = "Event to command",TargetType=typeof(EventToCommandPage) },
+                    new FlyoutPageMainFlyoutMenuItem { Id = 15,Title = "Inheritance style",TargetType=typeof(InheritanceStylePage) },
                 });
             }
 
